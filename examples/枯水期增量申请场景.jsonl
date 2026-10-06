@@ -1,0 +1,15 @@
+{"event_type":"permit_registered","payload":{"permit_id":"P-CITY","point":"PT-A","subject_id":"S-CITY","subject_name":"城市供水公司","use_codes":["domestic"],"priority_order":1,"hourly_limit_m3":300.0,"effective_from":"2026-09-01T00","doc_ref":"证-003"}}
+{"event_type":"permit_registered","payload":{"permit_id":"P-IND","point":"PT-A","subject_id":"S-IND","subject_name":"滨河工业园","use_codes":["industrial"],"priority_order":3,"hourly_limit_m3":100.0,"effective_from":"2026-09-01T00","doc_ref":"证-001"}}
+{"event_type":"permit_registered","payload":{"permit_id":"P-IRR","point":"PT-B","subject_id":"S-IRR","subject_name":"东灌区","use_codes":["irrigation","ecological"],"priority_order":2,"hourly_limit_m3":200.0,"effective_from":"2026-09-01T00","doc_ref":"证-002"}}
+{"event_type":"quota_opened","payload":{"quota_id":"Q-CITY-DRY","permit_id":"P-CITY","use_code":"domestic","season_label":"枯水期","start_hour":"2026-10-01T00","end_hour":"2026-11-01T00","quota_m3":8000.0,"doc_ref":"额度-003"}}
+{"event_type":"quota_opened","payload":{"quota_id":"Q-IND-DRY","permit_id":"P-IND","use_code":"industrial","season_label":"枯水期","start_hour":"2026-10-01T00","end_hour":"2026-11-01T00","quota_m3":1000.0,"doc_ref":"额度-001"}}
+{"event_type":"quota_opened","payload":{"quota_id":"Q-IRR-DRY","permit_id":"P-IRR","use_code":"irrigation","season_label":"枯水期","start_hour":"2026-10-01T00","end_hour":"2026-11-01T00","quota_m3":5000.0,"doc_ref":"额度-002"}}
+{"event_type":"section_registered","payload":{"section_id":"SEC-1","name":"生态控制断面甲","eco_flow_m3":500.0,"doc_ref":"区划-001"}}
+{"event_type":"section_requirement_scheduled","payload":{"schedule_id":"SCH-1","section_id":"SEC-1","start_hour":"2026-10-01T00","end_hour":"2026-11-01T00","eco_flow_m3":400.0,"doc_ref":"枯水期生态流量"}}
+{"event_type":"section_linked","payload":{"link_id":"L-1","section_id":"SEC-1","point":"PT-A","lag_hours":2,"consumptive_factor":0.8,"doc_ref":"水文关系-1"}}
+{"event_type":"section_linked","payload":{"link_id":"L-2","section_id":"SEC-1","point":"PT-B","lag_hours":1,"consumptive_factor":0.5,"doc_ref":"水文关系-2"}}
+{"event_type":"inflow_recorded","payload":{"raw_id":"F-1","section_id":"SEC-1","event_hour":"2026-10-05T12","inflow_m3":600.0,"estimate":false,"source":"国家水文站","observed_month":"2026-10"}}
+{"event_type":"measurement_recorded","payload":{"raw_id":"W-1","permit_id":"P-IRR","event_hour":"2026-10-05T11","use_code":"irrigation","gross_m3":100.0,"estimate":false,"source":"灌区渠首计量","observed_month":"2026-10"}}
+{"event_type":"return_recorded","payload":{"raw_id":"D-1","permit_id":"P-IRR","event_hour":"2026-10-05T11","return_m3":20.0,"estimate":false,"source":"退水口在线监测","observed_month":"2026-10"}}
+{"event_type":"measurement_recorded","payload":{"raw_id":"M-1","permit_id":"P-IND","event_hour":"2026-10-05T10","use_code":"industrial","gross_m3":50.0,"estimate":true,"source":"调度规程暂估（缺测）","observed_month":"2026-10"}}
+{"event_type":"measurement_recorded","payload":{"raw_id":"M-1","permit_id":"P-IND","event_hour":"2026-10-05T10","use_code":"industrial","gross_m3":50.0,"estimate":true,"source":"调度规程暂估（缺测）","observed_month":"2026-10"}}
